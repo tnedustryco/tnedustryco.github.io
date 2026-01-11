@@ -17,23 +17,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    /* =========================
-       REAL GARET FONT
-       ========================= */
-    @font-face {
-      font-family: 'Garet';
-      src: url('fonts/Garet-Book.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Garet';
-      src: url('fonts/Garet-Heavy.woff2') format('woff2');
-      font-weight: 700;
-      font-style: normal;
-    }
-
     body {
       margin: 0;
       font-family: 'Inter', Arial, sans-serif;
@@ -42,32 +25,38 @@
       text-align: center;
     }
 
+    /* MAIN WRAPPER */
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 70px 24px 40px;
+      padding: 60px 24px 40px; /* THIS CONTROLS VERTICAL POSITION */
     }
 
+    /* LOGO */
     .logo img {
       max-width: 520px;
       width: 100%;
       height: auto;
-      margin-bottom: 14px;
+      margin-bottom: 6px; /* TIGHT GAP */
+    }
+
+    /* TEXT GROUP */
+    .content {
+      margin-top: 0; /* NO DROP */
     }
 
     .tagline {
-      font-family: 'Inter', sans-serif;
       font-size: 1.05rem;
-      line-height: 1.5;
+      line-height: 1.45;
       opacity: 0.9;
-      margin-bottom: 12px;
+      margin-bottom: 6px;
     }
 
     .status {
       font-size: 1rem;
-      line-height: 1.6;
+      line-height: 1.5;
       opacity: 0.85;
-      margin-bottom: 22px;
+      margin-bottom: 12px;
     }
 
     .links a {
@@ -83,7 +72,7 @@
     }
 
     .note {
-      margin-top: 36px;
+      margin-top: 28px;
       font-size: 0.85rem;
       opacity: 0.6;
     }
@@ -94,7 +83,7 @@
       }
 
       .container {
-        padding-top: 60px;
+        padding-top: 50px;
       }
     }
   </style>
@@ -107,18 +96,20 @@
       <img src="logo.png" alt="TNEdustry.Co SkillSync Logo">
     </div>
 
-    <div class="tagline">
-      Connecting education, talent, and industry through SkillSync.
-    </div>
+    <div class="content">
+      <div class="tagline">
+        Connecting education, talent, and industry through SkillSync.
+      </div>
 
-    <div class="status">
-      Our official website is currently in development.
-    </div>
+      <div class="status">
+        Our official website is currently in development.
+      </div>
 
-    <div class="links">
-      <a href="https://tnedustryco.github.io/tnedustry-socials/" target="_blank">
-        Connect with Us ↗
-      </a>
+      <div class="links">
+        <a href="https://tnedustryco.github.io/tnedustry-socials/" target="_blank">
+          Connect with Us ↗
+        </a>
+      </div>
     </div>
 
     <div class="note">
