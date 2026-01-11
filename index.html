@@ -6,29 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <meta name="description" content="TNEdustry.Co connects education, talent, and industry through its SkillSync model.">
+  <meta name="description" content="TNEdustry.Co connects education, talent, and industry through SkillSync.">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="TNEdustry.Co">
-  <meta property="og:description" content="Connecting education, talent, and industry through SkillSync.">
-  <meta property="og:type" content="website">
-
-  <!-- Inter (secondary only) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Inter = PRIMARY FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    /* ===== GARET (PRIMARY BRAND FONT) ===== */
+    /* GARET = SECONDARY (loaded but NOT used on body text) */
     @font-face {
       font-family: 'Garet';
       src: url('fonts/Garet-Book.woff2') format('woff2');
       font-weight: 400;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'Garet';
-      src: url('fonts/Garet-Heavy.woff2') format('woff2');
-      font-weight: 700;
       font-style: normal;
     }
 
@@ -37,14 +25,14 @@
       background: #1e1c1c;
       color: #ffffff;
       text-align: center;
-      font-family: 'Garet', sans-serif; /* GARET DOMINATES */
+      font-family: 'Inter', Arial, sans-serif; /* ✅ MAIN FONT */
     }
 
-    /* 👇 THIS IS THE SAME LOGIC AS YOUR “BETTER” VERSION */
+    /* SAME LOGIC AS YOUR “GOOD / TADI” VERSION */
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 60px 24px 40px; /* NATURAL, NOT FORCED */
+      padding: 60px 24px 40px;
     }
 
     .logo img {
@@ -54,36 +42,36 @@
       margin-bottom: 18px;
     }
 
+    /* MAIN READABLE TEXT — INTER */
     .tagline {
-      font-size: 1.1rem;
-      line-height: 1.45;
-      margin-bottom: 8px;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      margin-bottom: 6px;
     }
 
     .status {
-      font-size: 1rem;
+      font-size: 0.95rem;
       opacity: 0.85;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .links a {
-      font-weight: 700;
+      font-weight: 600;
       color: #e6ff4b;
       text-decoration: none;
       font-size: 0.95rem;
-      letter-spacing: 0.4px;
+      letter-spacing: 0.3px;
     }
 
     .links a:hover {
       text-decoration: underline;
     }
 
-    /* SECONDARY TEXT ONLY */
+    /* FOOTER */
     .note {
       margin-top: 36px;
       font-size: 0.8rem;
       opacity: 0.6;
-      font-family: 'Inter', sans-serif;
     }
 
     @media (max-width: 768px) {
