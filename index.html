@@ -13,68 +13,86 @@
   <meta property="og:description" content="Connecting education, talent, and industry through SkillSync.">
   <meta property="og:type" content="website">
 
-  <!-- Inter -->
+  <!-- Inter (secondary / UI font) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
+    /* ===== GARET (BRAND FONT) ===== */
+    @font-face {
+      font-family: 'Garet';
+      src: url('fonts/Garet-Book.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Garet';
+      src: url('fonts/Garet-Heavy.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
       background: #1e1c1c;
       color: #ffffff;
       text-align: center;
+      font-family: 'Inter', Arial, sans-serif; /* default = Inter */
     }
 
-    /* MAIN WRAPPER */
+    /* SINGLE POSITION CONTROL */
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 24px 60px; /* LOGO HIGHER */
+      padding-top: 110px;   /* ONLY vertical control */
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-bottom: 80px;
     }
 
-    /* LOGO */
     .logo img {
       max-width: 520px;
       width: 100%;
       height: auto;
-      margin-bottom: 21px; /* SPACE AFTER LOGO */
+      margin-bottom: 22px;
     }
 
-    /* TEXT GROUP */
-    .content {
-      margin-top: 10px; /* PUSH TEXT DOWN */
-    }
-
+    /* BRAND TEXT — GARET */
     .tagline {
+      font-family: 'Garet', sans-serif;
+      font-weight: 400;
       font-size: 1.05rem;
       line-height: 1.5;
-      opacity: 0.9;
-      margin-bottom: 14px;
-    }
-
-    .status {
-      font-size: 1rem;
-      line-height: 1.6;
-      opacity: 0.85;
-      margin-bottom: 26px; /* SPACE BEFORE CTA */
+      margin-bottom: 10px;
     }
 
     .links a {
-      display: inline-block;
+      font-family: 'Garet', sans-serif;
+      font-weight: 700;
       color: #e6ff4b;
       text-decoration: none;
       font-size: 0.95rem;
-      letter-spacing: 0.3px;
+      letter-spacing: 0.4px;
     }
 
     .links a:hover {
       text-decoration: underline;
     }
 
+    /* SUPPORTING TEXT — INTER */
+    .status {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      opacity: 0.85;
+      margin-bottom: 22px;
+    }
+
     .note {
-      margin-top: 48px; /* FOOTER CLEARLY SEPARATED */
+      margin-top: 48px;
       font-size: 0.85rem;
       opacity: 0.6;
+      font-family: 'Inter', sans-serif;
     }
 
     @media (max-width: 600px) {
@@ -83,7 +101,7 @@
       }
 
       .container {
-        padding-top: 32px;
+        padding-top: 90px;
       }
     }
   </style>
@@ -96,20 +114,18 @@
       <img src="logo.png" alt="TNEdustry.Co SkillSync Logo">
     </div>
 
-    <div class="content">
-      <div class="tagline">
-        Connecting education, talent, and industry through SkillSync.
-      </div>
+    <div class="tagline">
+      Connecting education, talent, and industry through SkillSync.
+    </div>
 
-      <div class="status">
-        Our official website is currently in development.
-      </div>
+    <div class="status">
+      Our official website is currently in development.
+    </div>
 
-      <div class="links">
-        <a href="https://tnedustryco.github.io/tnedustry-socials/" target="_blank">
-          Connect with Us ↗
-        </a>
-      </div>
+    <div class="links">
+      <a href="https://tnedustryco.github.io/tnedustry-socials/" target="_blank">
+        Connect with Us ↗
+      </a>
     </div>
 
     <div class="note">
