@@ -8,47 +8,42 @@
   <!-- SEO -->
   <meta name="description" content="TNEdustry.Co connects education, talent, and industry through SkillSync.">
 
-  <!-- INTER = ONLY FONT -->
+  <!-- INTER ONLY -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-
     body {
+      margin: 0;
       background: #1e1c1c;
       color: #ffffff;
       text-align: center;
-      font-family: 'Inter', Arial, sans-serif; /* ✅ ONLY INTER */
-      overflow: hidden; /* ✅ NO SCROLL DESKTOP */
+      font-family: 'Inter', Arial, sans-serif; /* ✅ INTER ONLY */
     }
 
+    /* BACK TO TADI – NORMAL FLOW */
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 55px 24px 30px; /* BALANCED — FITS ONE SCREEN */
-      box-sizing: border-box;
+      padding: 60px 24px 40px; /* SAME LOGIC AS BEFORE */
     }
 
     .logo img {
       max-width: 520px;
       width: 100%;
       height: auto;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
 
     .tagline {
       font-size: 1.05rem;
-      line-height: 1.45;
+      line-height: 1.5;
       margin-bottom: 6px;
     }
 
     .status {
       font-size: 0.95rem;
       opacity: 0.85;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
 
     .links a {
@@ -64,23 +59,18 @@
     }
 
     .note {
-      margin-top: 28px;
+      margin-top: 36px;
       font-size: 0.8rem;
       opacity: 0.6;
     }
 
-    /* MOBILE — allow scroll (correct behaviour) */
     @media (max-width: 768px) {
-      body {
-        overflow: auto;
+      .logo img {
+        max-width: 360px;
       }
 
       .container {
         padding-top: 50px;
-      }
-
-      .logo img {
-        max-width: 360px;
       }
     }
   </style>
