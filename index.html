@@ -13,10 +13,27 @@
   <meta property="og:description" content="Connecting education, talent, and industry through SkillSync.">
   <meta property="og:type" content="website">
 
-  <!-- Font -->
+  <!-- Inter (body font) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
+    /* =========================
+       REAL GARET FONT
+       ========================= */
+    @font-face {
+      font-family: 'Garet';
+      src: url('fonts/Garet-Book.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Garet';
+      src: url('fonts/Garet-Heavy.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', Arial, sans-serif;
@@ -39,6 +56,7 @@
     }
 
     .tagline {
+      font-family: 'Inter', sans-serif;
       font-size: 1.05rem;
       line-height: 1.5;
       opacity: 0.9;
