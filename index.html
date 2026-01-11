@@ -13,7 +13,7 @@
   <meta property="og:description" content="Connecting education, talent, and industry through SkillSync.">
   <meta property="og:type" content="website">
 
-  <!-- Inter (secondary / UI font) -->
+  <!-- Inter (support font) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
@@ -32,38 +32,49 @@
       font-style: normal;
     }
 
-    body {
+    html, body {
+      height: 100%;
       margin: 0;
+    }
+
+    body {
       background: #1e1c1c;
       color: #ffffff;
       text-align: center;
-      font-family: 'Inter', Arial, sans-serif; /* default = Inter */
+      font-family: 'Inter', Arial, sans-serif;
+      overflow: hidden; /* ❗ NO SCROLL ON DESKTOP */
     }
 
-    /* SINGLE POSITION CONTROL */
+    /* ===== ONE-SCREEN LAYOUT ===== */
     .container {
       max-width: 900px;
+      height: 100vh;
       margin: 0 auto;
-      padding-top: 110px;   /* ONLY vertical control */
-      padding-left: 24px;
-      padding-right: 24px;
-      padding-bottom: 80px;
+      padding: 70px 24px 40px; /* LAST CONFIRMED GOOD BALANCE */
+      box-sizing: border-box;
     }
 
     .logo img {
-      max-width: 520px;
+      max-width: 500px;
       width: 100%;
       height: auto;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     /* BRAND TEXT — GARET */
     .tagline {
       font-family: 'Garet', sans-serif;
-      font-weight: 400;
       font-size: 1.05rem;
-      line-height: 1.5;
-      margin-bottom: 10px;
+      line-height: 1.45;
+      margin-bottom: 8px;
+    }
+
+    /* SUPPORT TEXT — INTER */
+    .status {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-bottom: 18px;
     }
 
     .links a {
@@ -79,29 +90,26 @@
       text-decoration: underline;
     }
 
-    /* SUPPORTING TEXT — INTER */
-    .status {
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      line-height: 1.6;
-      opacity: 0.85;
-      margin-bottom: 22px;
-    }
-
     .note {
-      margin-top: 48px;
-      font-size: 0.85rem;
+      margin-top: 40px;
+      font-size: 0.8rem;
       opacity: 0.6;
       font-family: 'Inter', sans-serif;
     }
 
-    @media (max-width: 600px) {
-      .logo img {
-        max-width: 360px;
+    /* MOBILE — allow scroll (correct behaviour) */
+    @media (max-width: 768px) {
+      body {
+        overflow: auto;
       }
 
       .container {
-        padding-top: 90px;
+        height: auto;
+        padding-top: 60px;
+      }
+
+      .logo img {
+        max-width: 360px;
       }
     }
   </style>
