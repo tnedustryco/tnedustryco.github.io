@@ -5,26 +5,29 @@
   <title>TNEdustry.Co</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <meta name="description" content="TNEdustry.Co connects education, talent, and industry through SkillSync.">
-
   <!-- INTER ONLY -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    body {
+    html, body {
+      height: 100%;
       margin: 0;
-      background: #1e1c1c;
-      color: #ffffff;
-      text-align: center;
-      font-family: 'Inter', Arial, sans-serif; /* ✅ INTER ONLY */
     }
 
-    /* BACK TO TADI – NORMAL FLOW */
+    body {
+      background: #1e1c1c;
+      color: #ffffff;
+      font-family: 'Inter', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center; /* ✅ TRUE CENTER */
+      text-align: center;
+      overflow: hidden; /* no scroll */
+    }
+
     .container {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 24px 40px; /* SAME LOGIC AS BEFORE */
+      padding: 24px;
     }
 
     .logo img {
@@ -59,18 +62,24 @@
     }
 
     .note {
-      margin-top: 36px;
+      margin-top: 28px;
       font-size: 0.8rem;
       opacity: 0.6;
     }
 
+    /* MOBILE — allow scroll */
     @media (max-width: 768px) {
-      .logo img {
-        max-width: 360px;
+      body {
+        align-items: flex-start;
+        overflow: auto;
       }
 
       .container {
-        padding-top: 50px;
+        padding-top: 48px;
+      }
+
+      .logo img {
+        max-width: 360px;
       }
     }
   </style>
