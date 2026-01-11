@@ -8,51 +8,47 @@
   <!-- SEO -->
   <meta name="description" content="TNEdustry.Co connects education, talent, and industry through SkillSync.">
 
-  <!-- Inter = PRIMARY FONT -->
+  <!-- INTER = ONLY FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    /* GARET = SECONDARY (loaded but NOT used on body text) */
-    @font-face {
-      font-family: 'Garet';
-      src: url('fonts/Garet-Book.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
+    html, body {
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       background: #1e1c1c;
       color: #ffffff;
       text-align: center;
-      font-family: 'Inter', Arial, sans-serif; /* ✅ MAIN FONT */
+      font-family: 'Inter', Arial, sans-serif; /* ✅ ONLY INTER */
+      overflow: hidden; /* ✅ NO SCROLL DESKTOP */
     }
 
-    /* SAME LOGIC AS YOUR “GOOD / TADI” VERSION */
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 60px 24px 40px;
+      padding: 55px 24px 30px; /* BALANCED — FITS ONE SCREEN */
+      box-sizing: border-box;
     }
 
     .logo img {
       max-width: 520px;
       width: 100%;
       height: auto;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
-    /* MAIN READABLE TEXT — INTER */
     .tagline {
       font-size: 1.05rem;
-      line-height: 1.5;
+      line-height: 1.45;
       margin-bottom: 6px;
     }
 
     .status {
       font-size: 0.95rem;
       opacity: 0.85;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     .links a {
@@ -67,20 +63,24 @@
       text-decoration: underline;
     }
 
-    /* FOOTER */
     .note {
-      margin-top: 36px;
+      margin-top: 28px;
       font-size: 0.8rem;
       opacity: 0.6;
     }
 
+    /* MOBILE — allow scroll (correct behaviour) */
     @media (max-width: 768px) {
-      .logo img {
-        max-width: 360px;
+      body {
+        overflow: auto;
       }
 
       .container {
         padding-top: 50px;
+      }
+
+      .logo img {
+        max-width: 360px;
       }
     }
   </style>
