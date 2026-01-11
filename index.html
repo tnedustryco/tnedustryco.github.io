@@ -13,7 +13,7 @@
   <meta property="og:description" content="Connecting education, talent, and industry through SkillSync.">
   <meta property="og:type" content="website">
 
-  <!-- Inter (SECONDARY only) -->
+  <!-- Inter (secondary only) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
@@ -32,49 +32,41 @@
       font-style: normal;
     }
 
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
-
     body {
+      margin: 0;
       background: #1e1c1c;
       color: #ffffff;
       text-align: center;
-      font-family: 'Garet', sans-serif; /* 🔥 GARET IS DEFAULT */
-      overflow: hidden; /* no desktop scroll */
+      font-family: 'Garet', sans-serif; /* GARET DOMINATES */
     }
 
+    /* 👇 THIS IS THE SAME LOGIC AS YOUR “BETTER” VERSION */
     .container {
       max-width: 900px;
-      height: 100vh;
       margin: 0 auto;
-      padding: 70px 24px 40px;
-      box-sizing: border-box;
+      padding: 60px 24px 40px; /* NATURAL, NOT FORCED */
     }
 
     .logo img {
-      max-width: 500px;
+      max-width: 520px;
       width: 100%;
       height: auto;
-      margin-bottom: 22px;
+      margin-bottom: 18px;
     }
 
-    /* MAIN TEXT — GARET */
     .tagline {
       font-size: 1.1rem;
       line-height: 1.45;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .status {
       font-size: 1rem;
       opacity: 0.85;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .links a {
-      font-family: 'Garet', sans-serif;
       font-weight: 700;
       color: #e6ff4b;
       text-decoration: none;
@@ -86,27 +78,21 @@
       text-decoration: underline;
     }
 
-    /* SECONDARY TEXT — INTER (ONLY HERE) */
+    /* SECONDARY TEXT ONLY */
     .note {
-      margin-top: 40px;
+      margin-top: 36px;
       font-size: 0.8rem;
       opacity: 0.6;
       font-family: 'Inter', sans-serif;
     }
 
-    /* MOBILE */
     @media (max-width: 768px) {
-      body {
-        overflow: auto;
+      .logo img {
+        max-width: 360px;
       }
 
       .container {
-        height: auto;
-        padding-top: 60px;
-      }
-
-      .logo img {
-        max-width: 360px;
+        padding-top: 50px;
       }
     }
   </style>
