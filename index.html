@@ -30,15 +30,15 @@
     }
 
     .container {
-      max-width: 720px;
+      max-width: 760px;
       padding: 40px 24px;
     }
 
-    .logo {
-      font-size: 3rem;
-      font-weight: 600;
-      letter-spacing: 1.4px;
-      margin-bottom: 12px;
+    .logo img {
+      max-width: 420px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 26px;
     }
 
     .tagline {
@@ -57,7 +57,7 @@
 
     .links a {
       display: inline-block;
-      margin-top: 12px;
+      margin-top: 14px;
       color: #e6ff4b;
       text-decoration: none;
       font-size: 0.95rem;
@@ -69,16 +69,25 @@
     }
 
     .note {
-      margin-top: 34px;
+      margin-top: 36px;
       font-size: 0.85rem;
       opacity: 0.6;
+    }
+
+    @media (max-width: 600px) {
+      .logo img {
+        max-width: 300px;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <div class="logo">TNEdustry.Co</div>
+    
+    <div class="logo">
+      <img src="logo.png" alt="TNEdustry.Co SkillSync Logo">
+    </div>
 
     <div class="tagline">
       Connecting education, talent, and industry through SkillSync.
@@ -97,6 +106,7 @@
     <div class="note">
       © 2026 TNEdustry.Co · All rights reserved
     </div>
+
   </div>
 </body>
 </html>
